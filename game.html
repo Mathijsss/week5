@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Vakkenvuller</title>
+
+</head>
+<body>
+<script>
+	alert ("We gaan het spel spelen: Vakkenvullen")
+	alert("Wat kan de vakkenvuller het beste doen?")
+	prompt("Fifo vullen of vroeg klaar zijn?")
+	
+	var vakkenvuller
+	if (vakkenvuller == "fifo vullen")	{			
+		alert("Je bent eindelijk klaar met fifo vullen wat ga je nu doen?")
+		prompt("Schoon maken of naar huis?")
+
+		var fifo
+		if (fifo == "schoon maken")	{
+			alert("Je gaat nu schoonmaken.")
+			prompt("Wat ga je nu doen? producten netjes of snel opstapelen?")	}
+
+		else {(fifo == "naar huis")	
+			alert("Je mag niet zomaar naar huis gaan!")
+			alert("Je bent onslagen")
+			document.write("Je kan het maar beter bij een andere supermarkt proberen")	}
+		
+	}
+	else {(vakkenvuller == "vroeg klaar zijn")
+		alert("Je bent nu vroeg klaar wat ga je nu doen?")
+		prompt("Naar huis of andere helpen?")
+
+		var vroeg
+		if (vroeg == "Naar huis")	{
+			alert("JE BENT ONTSLAGEN!")
+			document.write("Je kan het maar beter bij een andere supermarkt proberen")
+
+		}
+		else {(vroeg == "andere helpen")	
+			alert("Goed van je dat je iemand anders gaat helpen")
+			alert("We houden wel van mensen die om hun collega's geven!")
+			alert("JE BENT AANGENOMEN")	
+			document.write("Gefeliciteerd je bent aangenomen")	
+		}
+	}
+
+	
+
+	
+</script>
