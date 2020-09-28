@@ -8,30 +8,45 @@
 <script>
 	alert ("We gaan het spel spelen: Vakkenvullen")
 	alert("Wat kan de vakkenvuller het beste doen?")
-	prompt("Fifo vullen of vroeg klaar zijn?")
 	
-	var vakkenvuller
+	
+	var vakkenvuller = prompt("Fifo vullen of vroeg klaar zijn?")
 	if (vakkenvuller == "fifo vullen")	{			
 		alert("Je bent eindelijk klaar met fifo vullen wat ga je nu doen?")
-		prompt("Schoon maken of naar huis?")
+		
 
-		var fifo
+		var fifo = prompt("Schoon maken of naar huis?")
 		if (fifo == "schoon maken")	{
 			alert("Je gaat nu schoonmaken.")
-			prompt("Wat ga je nu doen? producten netjes of snel opstapelen?")	}
+			
 
-		else {(fifo == "naar huis")	
-			alert("Je mag niet zomaar naar huis gaan!")
-			alert("Je bent onslagen")
-			document.write("Je kan het maar beter bij een andere supermarkt proberen")	}
+			var opstapelen = prompt("Wat ga je nu doen? producten netjes of snel opstapelen?")
+				if (opstapelen == "netjes")	{
+				alert("Je gaat nu netjes opstapelen")
+				alert("Je doet echt je best met dat fifo vullen schoonmaken en netjes opstapelen. alleen dat kost zoveel tijd.")
+				alert("Je contract word niet verlengt, omdat je te langzaam bent.")
+				document.write("Je contract word niet verlengt!")	}
+
+				else {(opstapelen = "snel")
+				alert("Je gaat nu snel opstapelen")
+				alert("Gefeliciteerd je bent aangenomen")
+				alert("Je hebt alles net optijd af")
+				document.write("Gefeliciteerd je bent aangenomen!")
+				}	
+			}
+
+				else {(fifo == "naar huis")	
+				alert("Je mag niet zomaar naar huis gaan!")
+				alert("Je bent onslagen")
+				document.write("Je kan het maar beter bij een andere supermarkt proberen")	}
 		
 	}
 	else {(vakkenvuller == "vroeg klaar zijn")
 		alert("Je bent nu vroeg klaar wat ga je nu doen?")
-		prompt("Naar huis of andere helpen?")
+		
 
-		var vroeg
-		if (vroeg == "Naar huis")	{
+		var vroeg = prompt("Naar huis of andere helpen?")
+		if (vroeg == "naar huis")	{
 			alert("JE BENT ONTSLAGEN!")
 			document.write("Je kan het maar beter bij een andere supermarkt proberen")
 
@@ -48,3 +63,5 @@
 
 	
 </script>
+</body>
+</html>
