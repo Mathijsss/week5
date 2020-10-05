@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Vakkenvuller</title>
+
+</head>
+<body>
+<script type="text/javascript">
+	alert ("We gaan het spel spelen: Vakkenvullen")
+	alert("Wat kan de vakkenvuller het beste doen?")
+	
+	var tijd
+
+    tijd = prompt("hoeveel minuuten mag je maximaal over een zuivel container doen?")
+    if (tijd > 60){
+    alert("FOUT!! Dat is veelste lang")
+    alert("Maar ik zie het door de vingers, omdat je nog niet veel ervaring heb")
+    }
+    else if(tijd == 60){
+    alert("Dat klopt precies")
+    }
+    else if(tijd < 60){
+    alert("Is wel erg krap maar als jij het aan kan?")
+    }
+    else{
+    alert("vull alleen een getal in")
+    }
+
+	var vakkenvuller = prompt("Fifo vullen of vroeg klaar zijn?")
+	if (vakkenvuller == "fifo vullen")	{			
+		alert("Je bent eindelijk klaar met fifo vullen wat ga je nu doen?")
+		
+
+		var fifo = prompt("Schoon maken of naar huis?")
+		if (fifo == "schoon maken")	{
+			alert("Je gaat nu schoonmaken.")
+			
+
+			var opstapelen = prompt("Wat ga je nu doen? producten netjes of snel opstapelen?")
+				if (opstapelen == "netjes")	{
+				alert("Je gaat nu netjes opstapelen")
+				alert("Je doet echt je best met dat fifo vullen schoonmaken en netjes opstapelen. alleen dat kost zoveel tijd.")
+				alert("Je contract word niet verlengt, omdat je te langzaam bent.")
+				document.write("Je contract word niet verlengt!")	}
+
+				else if(opstapelen == "snel"){
+				alert("Je gaat nu snel opstapelen")
+				alert("Gefeliciteerd je bent aangenomen")
+				alert("Je hebt alles net optijd af")
+				document.write("Gefeliciteerd je bent aangenomen!")
+				}	
+			}
+
+				else if(fifo == "naar huis"){	
+				alert("Je mag niet zomaar naar huis gaan!")
+				alert("Je bent onslagen")
+				document.write("Je kan het maar beter bij een andere supermarkt proberen")	}
+		
+	}
+	else if(vakkenvuller == "vroeg klaar zijn"){
+		alert("Je bent nu vroeg klaar wat ga je nu doen?")
+		
+
+		var vroeg = prompt("Naar huis of andere helpen?")
+		if (vroeg == "naar huis")	{
+			alert("JE BENT ONTSLAGEN!")
+			document.write("Je kan het maar beter bij een andere supermarkt proberen")
+
+		}
+		else if(vroeg == "andere helpen"){	
+			alert("Goed van je dat je iemand anders gaat helpen")
+			alert("We houden wel van mensen die om hun collega's geven!")
+			alert("JE BENT AANGENOMEN")	
+			document.write("Gefeliciteerd je bent aangenomen")	
+		}
+	}
+
+	
+
+	
+</script>
+</body>
+</html>
